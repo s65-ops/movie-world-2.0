@@ -1,0 +1,116 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Action Movies</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #111;
+      color: white;
+    }
+    header {
+      background-color: #222;
+      padding: 20px;
+      text-align: center;
+      font-size: 28px;
+      font-weight: bold;
+    }
+    .container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+      padding: 20px;
+    }
+    .movie {
+      background-color: #1c1c1c;
+      border-radius: 10px;
+      overflow: hidden;
+      transition: transform 0.3s ease;
+    }
+    .movie:hover {
+      transform: scale(1.05);
+    }
+    .movie img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+    .movie .info {
+      padding: 10px;
+      text-align: center;
+    }
+    .movie .info a {
+      display: inline-block;
+      margin: 5px;
+      padding: 8px 15px;
+      background-color: #00cc66;
+      color: white;
+      border-radius: 5px;
+      text-decoration: none;
+      font-size: 14px;
+    }
+    .movie .info a:hover {
+      background-color: #00994d;
+    }
+    .footer {
+      margin-top: 40px;
+      text-align: center;
+      padding: 20px;
+      background: #222;
+    }
+    .social-buttons button {
+      margin: 5px;
+      padding: 10px 15px;
+      border: none;
+      border-radius: 5px;
+      font-size: 14px;
+      cursor: pointer;
+    }
+    .like { background-color: #3b5998; color: white; }
+    .comment { background-color: #00aced; color: white; }
+    .share { background-color: #25d366; color: white; }
+  </style>
+</head>
+<body>
+  <header>🔥 Action Movies Collection</header>
+
+  <div class="container">
+    <!-- Movie 1 -->
+    <div class="movie">
+      <a href="https://your-movie-link-1.com" target="_blank">
+        <img src="https://via.placeholder.com/300x450.png?text=Movie+1" alt="Movie 1 Poster" />
+      </a>
+      <div class="info">
+        <a href="https://play-link-1.com" target="_blank">▶️ Watch</a>
+        <a href="https://download-link-1.com" target="_blank">⬇️ Download</a>
+      </div>
+    </div>
+
+    <!-- Movie 2 -->
+    <div class="movie">
+      <a href="https://your-movie-link-2.com" target="_blank">
+        <img src="https://via.placeholder.com/300x450.png?text=Movie+2" alt="Movie 2 Poster" />
+      </a>
+      <div class="info">
+        <a href="https://play-link-2.com" target="_blank">▶️ Watch</a>
+        <a href="https://download-link-2.com" target="_blank">⬇️ Download</a>
+      </div>
+    </div>
+
+    <!-- Add more movies as needed -->
+  </div>
+
+  <div class="footer">
+    <div class="social-buttons">
+      <button class="like">👍 Like</button>
+      <button class="comment">💬 Comment</button>
+      <button class="share">🔗 Share</button>
+    </div>
+    <p>&copy; 2025 Action Movie Hub</p>
+  </div>
+</body>
+</html>
